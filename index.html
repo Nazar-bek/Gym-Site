@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Gym</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Fitness Gym</div>
+        <nav class="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#why-us">Why Choose Us</a>
+            <a href="#trainings">Trainings</a>
+            <a href="#team">Our Team</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="btn-join" id="headerButton">Join Us</button>
+    </header>
+
+    <!-- Header Popup Form -->
+    <div class="header-form-popup" id="headerFormPopup">
+        <div class="header-form-content">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <h2>Join Our Fitness Gym</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="file" accept="image/*" required>
+                <textarea placeholder="Your Goals"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="bg-video-wrapper">
+            <video class="bg-video" autoplay muted loop>
+                <source src="./videos/video_preview_h264.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to Fitness Gym</h1>
+            <p>Your journey to a healthier lifestyle begins here.</p>
+            <button class="btn">Get Started</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <ul>
+                <li><i class="fas fa-dumbbell"></i> State-of-the-art equipment</li>
+                <li><i class="fas fa-heart"></i> Personalized training plans</li>
+                <li><i class="fas fa-users"></i> Experienced trainers</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us" id="why-us">
+        <h2>Why Choose Us</h2>
+        <div class="feature-grid">
+            <div class="feature"><i class="fas fa-star"></i> Expert Trainers</div>
+            <div class="feature"><i class="fas fa-bolt"></i> High-Intensity Programs</div>
+            <div class="feature"><i class="fas fa-leaf"></i> Eco-Friendly Equipment</div>
+            <div class="feature"><i class="fas fa-heart"></i> Personalized Plans</div>
+            <div class="feature"><i class="fas fa-clock"></i> Flexible Hours</div>
+            <div class="feature"><i class="fas fa-thumbs-up"></i> Proven Results</div>
+        </div>
+    </section>
+
+    <!-- Trainings Section -->
+    <section class="trainings" id="trainings">
+        <h2>Our Trainings</h2>
+        <div class="training-grid">
+            <div class="training-item">
+                <img src="./assets/lossweight.webp" alt="Weight Loss">
+                <div class="training-info">Weight Loss Program</div>
+            </div>
+            <div class="training-item">
+                <img src="./assets/obesity.webp" alt="Muscle Gain">
+                <div class="training-info">Muscle Gain Program</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="team" id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member" data-info="John Doe - Trainer">
+                <img src="./assets/trainer2.webp" alt="John Doe">
+            </div>
+            <div class="team-member" data-info="Jane Smith - Nutritionist">
+                <img src="./assets/trainer.jpg" alt="Jane Smith">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <iframe class="map" src="https://www.google.com/maps/embed" allowfullscreen></iframe>
+        <div class="contact-form">
+            <h3>Contact Us</h3>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Fitness Gym. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
